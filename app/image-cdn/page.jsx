@@ -66,7 +66,7 @@ export default function Page() {
                 <h2 className="mb-4 text-2xl font-bold sm:text-3xl">Using next/image component</h2>
                 <Markdown content={nextImageSnippet} />
                 <div
-                    className="mt-8 overflow-hidden border-2 border-white rounded-lg relative max-w-screen-lg"
+                    className="relative max-w-screen-lg mt-8 overflow-hidden border-2 border-white rounded-lg"
                     style={{ aspectRatio: '3/2' }}
                 >
                     <Image
@@ -113,6 +113,137 @@ export default function Page() {
                     <div className="diff-resizer"></div>
                 </div>
             </section>
+            <form
+
+  action="#"
+
+  subject="Kontakt Sang i begravelse"
+
+  name="Sang i begravelse - Kontaktskjema"
+
+  data-netlify="true"
+
+  method="POST"
+
+>
+
+  <input
+
+    type="hidden"
+
+    name="form-name"
+
+    value="Sang i begravelse - Kontaktskjema"
+
+  />
+
+  <input type="hidden" name="subject" value="Kontakt Sang i begravelse" />
+
+  <div>
+
+    <label for="first-name">Fornavn</label>
+
+    <input
+
+      required
+
+      type="text"
+
+      name="first-name"
+
+      id="first-name"
+
+      autocomplete="given-name"
+
+    />
+
+  </div>
+
+  <div>
+
+    <label for="last-name">Etternavn</label>
+
+    <input
+
+      required
+
+      type="text"
+
+      name="last-name"
+
+      id="last-name"
+
+      autocomplete="family-name"
+
+    />
+
+  </div>
+
+  <div>
+
+    <label for="email">E-post</label>
+
+    <input required type="email" name="email" id="email" autocomplete="email" />
+
+  </div>
+
+  <div>
+
+    <label for="phone-number">Telefonnummer</label>
+
+    <input
+
+      type="tel"
+
+      name="phone-number"
+
+      id="phone-number"
+
+      autocomplete="tel"
+
+    />
+
+  </div>
+
+  <div>
+
+    <label for="message">Melding</label>
+
+    <textarea required name="message" id="message" rows="4"></textarea>
+
+  </div>
+
+  <div>
+
+    <input
+
+      id="samtykke"
+
+      name="samtykke"
+
+      type="checkbox"
+
+      required
+
+    />
+
+    <label for="samtykke">
+
+      Ved å velge dette godtar du vår
+
+      <a href="/personvernerklaering">personvernerklæring</a>.
+
+    </label>
+
+  </div>
+
+  <div>
+
+    <button type="submit">Send</button>
+
+  </div>
+
+</form>
         </div>
     );
 }
