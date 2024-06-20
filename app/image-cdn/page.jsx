@@ -115,8 +115,6 @@ export default function Page() {
             </section>
             <form
 
-  action="#"
-
   subject="Kontakt Sang i begravelse"
 
   name="Sang i begravelse - Kontaktskjema"
